@@ -8,9 +8,10 @@ class Database {
   async connect() {
     this.connection = await mysql.createConnection({
       host: 'localhost',
-      user: 'your_username',
-      password: 'your_password',
-      database: 'your_database',
+  port: 3306,
+  user: 'root',
+  password: 'password',
+      database: 'EMPLOYEES',
     });
   }
 
